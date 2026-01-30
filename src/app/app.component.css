@@ -1,0 +1,36 @@
+#core-concepts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(16, 2, 45, 1) 0%,
+    rgba(33, 3, 61, 1) 100%
+  );
+  min-height: 100%;
+}
+
+#core-concepts h2 {
+  text-align: center;
+  margin: 0 0 2rem 0;
+  font-size: 2.5rem;
+  background: -webkit-linear-gradient(180deg, #0086fe, #5e386a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 100%;
+}
+
+#core-concepts ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  padding: 0 1rem;
+  margin: 0;
+  list-style: none;
+  overflow-x: auto;
+}
+
+

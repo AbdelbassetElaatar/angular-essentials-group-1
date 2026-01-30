@@ -1,16 +1,16 @@
 
 <app-header></app-header>
-<app-example-list [contents]="contents"></app-example-list> 
-
 <section id="core-concepts">
-  <h2>Core Concepts</h2> 
-  
+  <h2>Core Concepts</h2>
   <ul>
     @for (conceptItem of coreConcepts; track conceptItem.title) {
-      <app-core-concept [concept]="conceptItem" />
+    <app-core-concept [concept]="conceptItem" />
     }
   </ul>
 </section>
+<app-example-list [contents]="contents"></app-example-list>
+
+
 
 
 

@@ -8,23 +8,23 @@ import { TabButtonComponent } from '../tab-button/tab-button.component';
   template: `
     <div>
       <h1>Examples</h1>
-      <div class="button-group">
-        @for (content of contents(); track content.title) {
-          <app-tab-button
-            [label]="content.title"
-            [isSelected]="selectedTopic === content.title"
-            (buttonClick)="onSelectTopic(content.title)" />
-        }
-      </div>
-      <div class="example-content">
-        @if (selectedTopic) {
-          <h2>{{ getSelectedContent()?.title }}</h2>
-          <p>{{ getSelectedContent()?.description }}</p>
-          <pre>{{ getSelectedContent()?.code }}</pre>
-        } @else {
-          <p>Please select a topic</p>
-        }
-      </div>
+    <div class="button-group">
+      @for (content of contents(); track content.title) {
+        <app-tab-button
+          [label]="content.title"
+          [isSelected]="selectedTopic === content.title"
+          (buttonClick)="onSelectTopic(content.title)" />
+      }
+    </div>
+    <div class="example-content">
+      @if (selectedTopic) {
+        <h2>{{ getSelectedContent()?.title }}</h2>
+        <p>{{ getSelectedContent()?.description }}</p>
+        <pre>{{ getSelectedContent()?.code }}</pre>
+      } @else {
+        <p>Please select a topic</p>
+      }
+    </div>
     </div>
   `,
   styleUrl: './example-list.component.css'
