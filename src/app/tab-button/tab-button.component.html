@@ -1,1 +1,5 @@
-<p>tab-button works!</p>
+<button
+  (click)="handleClick()"
+  [class.active]="isSelected()">
+  {{ label() }}
+</button>
